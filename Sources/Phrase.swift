@@ -56,7 +56,7 @@ final public class Phrase {
         var formatted = template
         
         for (key, value) in replacements {
-            formatted = formatted.stringByReplacingOccurrencesOfString(tokenize(key), withString: value)
+            formatted = formatted.replacingOccurrences(of: tokenize(key: key), with: value)
         }
         
         return formatted
