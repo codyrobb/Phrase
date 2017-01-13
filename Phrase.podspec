@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/codyrobb/Phrase'
   spec.authors      = { 'Cody Robertson' => 'codyrobertsonn@gmail.com' }
   spec.summary      = 'A Swift templating library.'
-  spec.source       = { :git => 'https://github.com/codyrobb/Phrase.git', :tag => 'v1.0.0' }
+  spec.source       = { :git => 'https://github.com/codyrobb/Phrase.git', :tag => '1.0.0' }
   spec.source_files = 'Sources/*'
 
   spec.ios.deployment_target  = '9.0'
