@@ -60,6 +60,12 @@ let greeting = Phrase(template: "Hi {name}, I am {age} years old.")
 print(greeting) // Prints: "Hi Cody, I am 21 years old."
 ```
 
+## Inspired By
+
+This project was inspired the following project by Square. It is a Swift port of it.
+
+https://github.com/square/phrase
+
 ## License
 
 > Copyright 2017 Cody Robertson
