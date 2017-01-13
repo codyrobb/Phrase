@@ -4,7 +4,11 @@ Phrase is a Swift templating library.
 
 ## Installation
 
-Currently, the only way to install Phrase is with Cocoapods.
+There are two ways to use Phrase currently:
+
+- __Cocoapods__
+
+- __Swift Package Manager__
 
 ## Concepts
 
