@@ -16,7 +16,7 @@ There are two ways to use Phrase currently:
 
 A token is a item that is to be replace. It is identifier by a key surrounded by braces.
 
-__Examples:__ `{name}`, `{age}`, `year}`.
+__Examples:__ `{name}`, `{age}`, `{year}`.
 
 ### Template
 
@@ -36,7 +36,7 @@ Phrase(template: "Hi {name}, I am {age} years old.}"
 
 ### `func put(key: String, value: CustomStringConvertable) -> Phrase`
 
-After initialization, it is time to supply the `Phrase` with keys to be replaced. Using this method, we can designate to replace any key with a value that conforms to `CustomStringConvertable)`. Notice that this method returns a `Phrase`, rather itself, to allow easy chaining.
+After initialization it is time to supply the `Phrase` with keys to be replaced. Using this method, we can designate to replace any key with a value that conforms to `CustomStringConvertable)`. Notice that this method returns itself to allow easy chaining.
 
 Note that attempting to use the same `key` more than once will result in the **last** value supplied being used.
 
@@ -62,7 +62,7 @@ print(greeting) // Prints: "Hi Cody, I am 21 years old."
 
 ## Inspired By
 
-This project was inspired the following project by Square. It is a Swift port of it.
+This project was inspired by the following project by Square. It is a Swift inspired port of it.
 
 https://github.com/square/phrase
 
