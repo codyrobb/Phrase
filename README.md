@@ -31,7 +31,7 @@ __Examples:__:  `The {fruit} is the color {color}.`, `{name} is {age} years old!
 Phrase is extremely easy to use. The only initial requirement for creating a `Phrase` is a template.
 
 ```swift
-Phrase(template: "Hi {name}, I am {age} years old.}"
+Phrase(template: "Hi {name}, I am {age} years old.")
 ```
 
 ### `func put(key: String, value: CustomStringConvertable) -> Phrase`
