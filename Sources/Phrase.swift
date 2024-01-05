@@ -8,21 +8,16 @@
 
 import Foundation
 
-
 final public class Phrase {
 
     // MARK: -
     // MARK: Properties
     
-    /**
-     The template we will attempt to replace tokens of.
-     */
+    /// The template we will attempt to replace tokens of.
     private let template: String
     
-    /**
-     The set of token replacements to be replaced in the template.
-     */
-    private var replacements: [String: String] = [:]
+    /// The set of token replacements to be replaced in the template.
+    private var replacements: [String : String] = [:]
     
     // MARK: -
     // MARK: Initialization
@@ -35,22 +30,22 @@ final public class Phrase {
     // MARK: Public
     
     /**
-     Adds a record to replace the tokenized key with the given value in the template.
-     
-     - Parameters:
-        - key: The key you want to replace.
-        - value: The value to replace the key with.
-     - Returns: Returns itself for easy chaining.
+     * Adds a record to replace the tokenized key with the given value in the template.
+     *
+     * - Parameters:
+     *     - key: The key you want to replace.
+     *     - value: The value to replace the key with.
      */
+    @discardableResult
     public func put(key: String, value: CustomStringConvertible) -> Phrase {
         replacements[key] = value.description
         return self
     }
     
     /**
-     Returns a formatted string by attempting to replace all tokens with their respective values.
-     
-     - Returns: A formatted string with all current replacements.
+     * Returns a formatted string by attempting to replace all tokens with their respective values.
+     *
+     * - Returns: A formatted string with all current replacements.
      */
     public func format() -> String {
         var formatted = template
@@ -66,10 +61,10 @@ final public class Phrase {
     // MARK: Private
     
     /**
-     Tokenizes the given key.
-     
-     - Parameter key: The key you want to tokenize.
-     - Returns: A tokenized version of the key.
+     * Tokenizes the given key.
+     *
+     * - Parameter key: The key you want to tokenize.
+     * - Returns: A tokenized version of the key.
      */
     private func tokenize(key: String) -> String {
         return "{" + key + "}"
